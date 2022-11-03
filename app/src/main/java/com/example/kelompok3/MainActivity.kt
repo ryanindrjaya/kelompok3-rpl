@@ -22,9 +22,14 @@ class MainActivity : AppCompatActivity() {
         var tegar = findViewById<ImageView>(R.id.tegar)
 
         ryan.setOnClickListener { openRyanActivity() }
+        fauzi.setOnClickListener { openFauziActivity() }
     }
 
     public fun openRyanActivity() {
         startActivity(Intent(this@MainActivity, RyanActivity::class.java))
+    }
+    
+    public fun openRyanActivity() {
+        startActivity(Intent(this@MainActivity, FauziActivity::class.java))
     }
 }
