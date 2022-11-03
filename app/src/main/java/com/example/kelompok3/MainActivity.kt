@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(Intent(this@MainActivity, RyanActivity::class.java))
     }
     
-    public fun openRyanActivity() {
+    public fun openFauziActivity() {
         startActivity(Intent(this@MainActivity, FauziActivity::class.java))
     }
 }
