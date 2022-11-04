@@ -1,7 +1,6 @@
 package com.example.kelompok3
 
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -22,9 +21,14 @@ class MainActivity : AppCompatActivity() {
         var tegar = findViewById<ImageView>(R.id.tegar)
 
         ryan.setOnClickListener { openRyanActivity() }
+        naufal.setOnClickListener { openNaufalActivity()}
     }
 
     public fun openRyanActivity() {
         startActivity(Intent(this@MainActivity, RyanActivity::class.java))
+    }
+
+    public fun openNaufalActivity() {
+        startActivity(Intent(this@MainActivity, NaufalActivity::class.java))
     }
 }
