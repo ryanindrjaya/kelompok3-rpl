@@ -22,9 +22,13 @@ class MainActivity : AppCompatActivity() {
         var tegar = findViewById<ImageView>(R.id.tegar)
 
         ryan.setOnClickListener { openRyanActivity() }
+        shafwan.setOnClickListener { openShafwanActivity() }
     }
 
     public fun openRyanActivity() {
         startActivity(Intent(this@MainActivity, RyanActivity::class.java))
+    }
+    public fun openShafwanActivity() {
+        startActivity(Intent(this@MainActivity, ShafwanActivity::class.java))
     }
 }
